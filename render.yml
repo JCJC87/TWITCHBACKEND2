@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: RankingTwitchBackend
+    env: node
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "node server.js"
+    branch: main
+    envVars:
+      - key: TWITCH_CLIENT_ID
+        sync: false
+      - key: API_KEY
+        sync: false
+      - key: JWT_SECRET
+        sync: false
