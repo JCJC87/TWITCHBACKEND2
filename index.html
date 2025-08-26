@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ranking Twitch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- TOP 3 VIEWERS -->
+    <div class="top3-label">TOP 3 VIEWERS</div>
+
+    <!-- Podio -->
+    <div class="podio-container">
+        <div class="podio">
+            <div id="segundo" class="puesto podio-escalon plata">
+                <span class="numero">2</span>
+                <span class="usuario">Usuario2</span>
+                <span class="crown plata">👑</span>
+            </div>
+            <div id="primer" class="puesto podio-escalon oro">
+                <span class="numero">1</span>
+                <span class="usuario">Usuario1</span>
+                <span class="crown oro">👑</span>
+            </div>
+            <div id="tercero" class="puesto podio-escalon bronce">
+                <span class="numero">3</span>
+                <span class="usuario">Usuario3</span>
+                <span class="crown bronce">👑</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lista posiciones 4–8 -->
+    <div class="lista">
+        <ul id="resto">
+            <li>Usuario4 - 0 pts</li>
+            <li>Usuario5 - 0 pts</li>
+            <li>Usuario6 - 0 pts</li>
+            <li>Usuario7 - 0 pts</li>
+            <li>Usuario8 - 0 pts</li>
+        </ul>
+    </div>
+
+    <!-- Mensajes de error -->
+    <div id="mensaje-error"></div>
+
+    <script src="panel.js"></script>
+</body>
+</html>
